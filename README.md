@@ -12,7 +12,7 @@ This section assumes that you have Python and `pip`, and shows the installation 
 
 To install Cookiecutter:
 
-```sh
+```
 pip install cookiecutter
 ```
 
@@ -25,7 +25,7 @@ See the
 
 After installing Cookiecutter, you can use _cookiecutter-pypippackage_ with the following command:
 
-```sh
+```
 cookiecutter https://github.com/caglartoklu/cookiecutter-pypippackage.git
 ```
 
@@ -34,7 +34,7 @@ cookiecutter https://github.com/caglartoklu/cookiecutter-pypippackage.git
 
 After creating the package, tests can be executed with the following command at the root folder of the package:
 
-```sh
+```
 python setup.py test
 ```
 
@@ -69,6 +69,57 @@ And [some others](https://github.com/audreyr/cookiecutter#python) too.
 - [ ] Check the `setup.py` content.
 - [ ] Check the `tox.ini` content and remove unsupported Python versions.
 - [ ] Edit the resulting `README.rst` content.
+
+
+# Tutorial
+
+Here is a sample session with cookiecutter-pypippackage:
+![cookiecutter-pypippackage1](https://user-images.githubusercontent.com/2071639/31346524-060afd0c-ad22-11e7-8a9a-028a99f24c7c.gif)
+
+The resulting `setup.py` file:
+
+```python
+"""
+setuptools module for project.
+"""
+
+import setuptools
+
+setuptools.setup(
+    name="pack1",
+    version="0.1.0",
+    url="https://github.com/brucewayne/pack1",
+
+    author="Bruce Wayne",
+    author_email="brucewayne@gmail.com",
+
+    description="That is some package",
+    long_description=open('README.rst').read(),
+
+    packages=setuptools.find_packages(),
+
+    install_requires=[],
+
+    classifiers=[
+        'Development Status :: 2 - Pre-Alpha',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+    ],
+
+    entry_points={
+        'console_scripts': ['pack1=pack1.command_line:main'],
+    },
+
+    test_suite='nose.collector',
+    tests_require=['nose'],
+
+    include_package_data=True,
+    zip_safe=False,
+)
+```
 
 
 # License
