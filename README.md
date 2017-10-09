@@ -41,6 +41,21 @@ python setup.py test
 The testing framework of choice is [nose](https://nose.readthedocs.io/en/latest/).
 
 
+# Linting
+
+A useful utility `make_lint.py` is added to the resulting package.
+This utility analyses the `.py` files in the package using
+[Pylint](https://pypi.python.org/pypi/pylint) and [Pep8](https://pypi.python.org/pypi/pep8).
+
+Simply run this utility to scan your package:
+
+```
+python make_lint.py
+```
+
+When the job is done, it is safe to delete it from your package.
+
+
 # FAQ
 
 ### What is the Python version for the resulting package ?
