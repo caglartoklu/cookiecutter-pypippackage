@@ -56,11 +56,16 @@ You can use any editor for reStructuredText such as Vim, Emacs, Sublime Text etc
 If you want a specific editor, you can check [ReText](https://github.com/retext-project/retext).
 If you need an online editor without any installation and configuration, you can use [rsted](https://github.com/anru/rsted).
 
-### I don't like this package, it is too simple/complex/good/bad/ugly for me. Are there any alternatives for Python packages?
+### I don't like this package, it is too simple/complex/good/bad/ugly for me. Are there any alternatives for Python packages ?
 
 There is [cookiecutter-pypackage](https://github.com/audreyr/cookiecutter#cookiecutter-specials)
 which is maintained by Cookiecutter team.
 And [some others](https://github.com/audreyr/cookiecutter#python) too.
+
+### Which fields I need to fill to create a package from scratch ?
+
+Just a few.
+Take a look at [cookiecutter.json](cookiecutter.json).
 
 
 # Checklist after Creating the Package
