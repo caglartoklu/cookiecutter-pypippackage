@@ -1,0 +1,9 @@
+{
+    "package_name": "my_package",
+    "package_description": "That is some package",
+    "package_version": "0.1.0",
+    "author_name": "FirstName LastName",
+    "github_username": "{{ cookiecutter.author_name.lower().replace(' ', '') }}",
+    "author_email": "{{ cookiecutter.github_username + '@gmail.com' }}",
+    "year": "{% now 'utc', '%Y' %}"
+}
