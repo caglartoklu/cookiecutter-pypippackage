@@ -41,12 +41,14 @@ nosetests.xml
 .vs/*
 .vscode/
 .vscode/*
+.spyproject/
+.spyproject/*
 
 .draft/
 .draft/*
 _draft/
 _draft/*
+.private/
+.private/*
 _private/
 _private/*
-.spyproject/
-.spyproject/*
