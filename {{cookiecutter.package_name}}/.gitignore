@@ -48,3 +48,5 @@ _draft/
 _draft/*
 _private/
 _private/*
+.spyproject/
+.spyproject/*
